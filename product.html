@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- External css link-->
+        <link rel="stylesheet" href="./css/main.css">
+        <!-- JQuery CDN -->
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+        <!-- logo in the title bar -->
+        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Kafene</title>
+</head>
+<body>
+    <!-- Header starts here -->
+    <header>
+        <div class="links">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+                <h4>Kafene</h4>
+            </div>
+            <!-- navbar starts -->
+            <nav class="link">
+                <a href="/order.html" class="list">Orders</a>
+                <a href="/product.html" class="list">Products</a>
+                <a href="/user.html" class="list">Users</a>
+            </nav>
+        </div>
+        <div class="logout">
+            <a href="/login.html"><h1 class="list">Logout</h1></a>
+        </div>
+        <!-- navbar ends -->
+    </header>
+    <!-- Header ends here -->
+    <div class="dummy"></div>
+    <div class="main-container">
+        <h1>Products</h1>
+        <div class="contant">
+            <div class="left-section">
+                <h3>Filters</h3>
+                <div class="count">
+                    <span>Count: </span><span class="ordersCount">100</span>
+                    <div class="check">
+                        <input type="checkbox" class="filter_check" value="product-expired" id="expiredCheck" checked>
+                        <h3>Expired</h3>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" class="filter_check" value="product-low-stock" id="lstockCheck" checked>
+                        <h3>Low Stock</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <table class="homepage">
+                    <tr>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Product Brand</th>
+                        <th>Expirey Date</th>
+                        <th>Unit Price</th>
+                        <th>Stock</th>
+                    </tr>
+                    <tbody class="contant-section">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- link of an external javascript file -->
+    <script src="./js/product.js"></script>
+</body>
+</html>

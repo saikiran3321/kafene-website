@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- External css link-->
+        <link rel="stylesheet" href="./css/main.css">
+        <!-- JQuery CDN -->
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+        <!-- logo in the title bar -->
+        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Kafene</title>
+</head>
+<body>
+    <!-- Header starts here -->
+    <header>
+        <div class="links">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+                <h4>Kafene</h4>
+            </div>
+            <!-- navbar starts -->
+            <nav class="link">
+                <a href="#" class="list" id="Orders">Orders</a>
+                <a href="#" class="list" id="Products">Products</a>
+                <a href="#" class="list" id="Users">Users</a>
+            </nav>
+            <!-- navbar ends-->
+        </div>
+    </header>
+    <!-- Header ends here -->
+    <div class="dummy"></div>
+    <!-- Main start here -->
+    <div class="container">
+        <form>
+            <h1>Sign In</h1>
+            <input type="text" required placeholder="Enter Username" class="test" id="userInput" required>
+            <input type="password" required placeholder="Enter Password" class="password" id="passwordInput" required>
+            <input type="submit" value="Login" class="login" id="loginbutton">
+        </form>
+    </div>
+    <!-- Main ends here -->
+    <!-- link External javascript -->
+    <script src="./js/login.js"></script>
+</body>
+</html>
